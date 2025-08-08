@@ -11,7 +11,7 @@ const Customers = (): React.JSX.Element => {
       </p>
       <SyncCustomersModal/>
       <div className="mt-4">
-        <div className="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl p-4 md:p-5">
+        <div className="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl p-4 md:py-5 md:px-2">
           <div className="flex flex-col">
             <div className="-m-1.5 overflow-x-auto">
               <div className="p-1.5 min-w-full inline-block align-middle">
