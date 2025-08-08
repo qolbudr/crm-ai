@@ -4,7 +4,6 @@ import { appointmentList } from "../../../../cores/variables/appointment_list";
 import React from "react";
 import type { AppointmentListType } from "../../../../cores/types/appointment_list_type";
 import { CallSimulation } from "../components/call_simulation";
-import { set } from "lodash";
 
 const Appointments = (): React.JSX.Element => {
   const [appointment, selectAppointment] = React.useState<AppointmentListType | undefined>();
@@ -26,7 +25,7 @@ const Appointments = (): React.JSX.Element => {
     <button ref={openModalRef} type="button" className="hidden py-3 px-4 items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" aria-haspopup="dialog" aria-expanded="false" aria-controls="call-simulation" data-hs-overlay="#call-simulation">
       Open modal
     </button>
-    <CallSimulation isOpen={isOpen} />
+    <CallSimulation key={'appointments'} isOpen={isOpen} />
     <h1 className="text-2xl font-bold mb-0">Appointments</h1>
     <p className="text-gray-700">
       Manage your appointments and schedule.

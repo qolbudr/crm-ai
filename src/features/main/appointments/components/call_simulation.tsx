@@ -10,7 +10,6 @@ export const CallSimulation = ({ isOpen }: { isOpen: boolean }) => {
     console.log(isOpen);
     if (isOpen) {
       handleTranscript();
-
     }
   }, [isOpen]);
 
@@ -42,7 +41,7 @@ export const CallSimulation = ({ isOpen }: { isOpen: boolean }) => {
               <button type="button" className="py-4 px-4 cursor-pointer inline-flex items-center gap-x-2 text-sm font-medium rounded-full bg-slate-800 text-gray-400 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
                 <Icon icon="el:speaker" className="size-4" />
               </button>
-              <button type="button" className="py-4 px-4 cursor-pointer inline-flex items-center gap-x-2 text-sm font-medium rounded-full bg-red-500 text-white shadow-2xs hover:bg-red-400 focus:outline-hidden focus:bg-red-400 disabled:opacity-50 disabled:pointer-events-none">
+              <button type="button" className="py-4 px-4 cursor-pointer inline-flex items-center gap-x-2 text-sm font-medium rounded-full bg-red-500 text-white shadow-2xs hover:bg-red-400 focus:outline-hidden focus:bg-red-400 disabled:opacity-50 disabled:pointer-events-none" data-hs-overlay="#hs-static-backdrop-modal">
                 <Icon icon="mdi:phone-hangup" className="size-10" />
               </button>
               <button type="button" className="py-4 px-4 cursor-pointer inline-flex items-center gap-x-2 text-sm font-medium rounded-full bg-slate-800 text-gray-400 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
