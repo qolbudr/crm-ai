@@ -17,10 +17,10 @@ export const Sidebar = (): React.JSX.Element => {
                 ...sidebarItem.map((item, index) =>
                   <li key={index}>
                     <Link to={item.href}>
-                      <a className={`flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 ${item.isActive ? 'bg-gray-100' : ''}`} href="#">
+                      <div className={`flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 ${item.isActive ? 'bg-gray-100' : ''}`}>
                         {item.icon && <span className="size-6">{item.icon}</span>}
                         {item.label}
-                      </a>
+                      </div>
                     </Link>
                   </li>
                 )
