@@ -8,9 +8,9 @@ export const sidebarItem: SidebarItemType[] = [
     href: '/',
   },
   {
-    label: 'Contacts',
+    label: 'Customers',
     icon: <Icon icon="lucide:contact" className="size-6" />,
-    href: '/contacts',
+    href: '/customers',
   },
   {
     label: 'Appointments',

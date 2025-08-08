@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import { sidebarItem } from "../cores/variables/sidebar_item"
 
 export const Sidebar = (): React.JSX.Element => {
@@ -13,12 +14,14 @@ export const Sidebar = (): React.JSX.Element => {
           <div className=" pb-0 px-2  w-full flex flex-col flex-wrap" >
             <ul className="space-y-1">
               {
-                ...sidebarItem.map((item, index) => 
+                ...sidebarItem.map((item, index) =>
                   <li key={index}>
-                    <a className={`flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 ${item.isActive ? 'bg-gray-100' : ''}`} href="#">
-                      {item.icon && <span className="size-6">{item.icon}</span>}
-                      {item.label}
-                    </a>
+                    <Link to={item.href}>
+                      <a className={`flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 ${item.isActive ? 'bg-gray-100' : ''}`} href="#">
+                        {item.icon && <span className="size-6">{item.icon}</span>}
+                        {item.label}
+                      </a>
+                    </Link>
                   </li>
                 )
               }
