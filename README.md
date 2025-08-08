@@ -1,69 +1,29 @@
-# React + TypeScript + Vite
+<h2>CRM - AI</h2>
+<span>Integerate AI with CRM analytics function</span>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Features</h2>
+<ol>
+  <li>In App Call and Transcribe</li>
+  <li>Customer list integerated with google sheet</li>
+  <li>AI Summary and auto make appointment suggestion base on call conversation</li>
+  <li>Appointment schedule</li>
+  <li>AI message template recommendation</li>
+  <li>Analytics</li>
+</ol>
 
-Currently, two official plugins are available:
+<h2>Screenshot</h2>
+<div align="center">
+  <img width="300" src="./screenshots/dashboard.png" alt="Dashboard">
+  <img width="300" src="./screenshots/customers.png" alt="Customers">
+  <img width="300" src="./screenshots/sync-customer-gsheet.png" alt="Sync Customer Gsheet">
+  <img width="300" src="./screenshots/synced-customer.png" alt="Synced Customer">
+  <img width="300" src="./screenshots/transcribe-call.png" alt="Transcribe Call">
+  <img width="300" src="./screenshots/appointments.png" alt="Appointments">
+  <img width="300" src="./screenshots/message-templates.png" alt="Messsage Templates">
+  <img width="300" src="./screenshots/analytics.png" alt="Analytics">
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+<h2>Installation</h2>
+<pre>
+  npm install && npm run dev
+</pre>
