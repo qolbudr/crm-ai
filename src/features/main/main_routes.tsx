@@ -1,6 +1,6 @@
 import { Route } from "react-router";
 import MainLayout from "./main_layout";
-import Dashboard from "./dashboard/dashboard";
+import Dashboard from "./dashboard/pages/dashboard";
 
 export const mainRoutes = [
     <Route element={<MainLayout />}>
